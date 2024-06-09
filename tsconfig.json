@@ -1,14 +1,18 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
+    "target": "esnext",
     "useDefineForClassFields": true,
-    "module": "ESNext",
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "esnext",
+    "lib": ["esnext", "dom", "dom.iterable"],
+    "types": [
+      "vite/client"
+    ],
     "skipLibCheck": true,
     /* Bundler mode */
     "moduleResolution": "node",
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
+    "baseUrl": ".",
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "preserve",
@@ -17,8 +21,11 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
   },
-  "include": ["evd.d.ts","src/**/*.ts","src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "src/router.ts"],
+  "include": ["evd.d.ts","src/**/*.ts","src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "src/routing.ts"],
+  "exclude": [
+    "node_modules"
+  ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
