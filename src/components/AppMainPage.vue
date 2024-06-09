@@ -1,6 +1,6 @@
 <template>
   <div class="main_page page_layout_height">
-    <img class="img" src="../assets/welcome.jpg"/>
+    <img class="img" src="../../public/assets/welcome.jpg"/>
   </div>
 </template>
 

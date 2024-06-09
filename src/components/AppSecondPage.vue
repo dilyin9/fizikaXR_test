@@ -1,7 +1,7 @@
 <template>
   <div class="second_page page_layout_height">
     <div class="left_block">
-      <img v-show="show" class="img" src="../assets/image2.jpg" @load="setShowTrue" />
+      <img v-show="show" class="img" src="../../public/assets/image2.jpg" @load="setShowTrue" />
     </div>
     <div class="right_block">
       <div class="settings">
