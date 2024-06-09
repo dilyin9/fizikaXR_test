@@ -53,8 +53,9 @@ const fetchText = () => {
     display: flex;
     overflow: hidden;
     padding: .5rem;
-    align-items: center;
-    justify-content: center;
+    align-items: start;
+    justify-content: start;
+    width: 40%;
     .img {
       max-width: 100%;
       max-height: 100%;
@@ -66,7 +67,8 @@ const fetchText = () => {
     display: flex;
     flex-direction: column;
     row-gap: 0.5rem;
-    flex: 1;
+    width: inherit;
+    flex-grow: 100;
     .settings {
       display: flex;
       flex-direction: row;
